@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.finder div h1 {
+    font-family: 'Inter';
+    font-size: 28px;
+    font-weight: normal;
+}
+
+.cars {
+    background-color: orange;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    padding: 8px;
+}
+
+.header h2 {
+    font-weight: bold;
+    font-size: 32px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.finder {
+    background-color: rgba(128, 128, 128, 0.212);
+    border: 1px solid rgba(80, 75, 75, 0.212);
+    width: 30%;
+    padding: 15px;
+    height: 79%;
+}
+
+form select {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+    padding: 7px;
+}
+
+.sectioner {
+    display: flex;
+    gap: 15px;
+}
+
+form div {
+    padding-bottom: 10px;
+}
+
+form label {
+    color: black;
+    font-weight: 700;
+    font-size: 14px;
+    font-family: "Inter";
+}
+
+.finder button {
+    background: rgb(165, 164, 171);
+    border: none;
+    padding: 15px;
+    color: white;
+    border-radius: 10px;
+    width: 120px;
+    box-shadow: inset 0px 0px 113px 32px rgba(0, 0, 0, 0.75);
+    text-transform: uppercase;
+}
+
+.list--type {
+    display: grid;
+    gap: 30px;
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.list--type img {
+    width: 300px;
+    object-fit: cover;
+    height: 200px;
+    margin-right: 50px;
+}
+
+.bi--direction {
+    display: flex;
+    gap: 80px;
+    justify-content: flex-start;
+    margin: 10px;
+}
+
+.results--container {
+    display: flex;
+    border-bottom: 1px solid gray;
+}
+
+.right--container {
+    font-family: 'Inter';
+}
+
+.right--container span p {
+    padding-top: 32px;
+}
+
+.details ol li {
+    list-style: none;
+    padding-right: 25px;
+}
+
+.details {
+    background-color: rgba(128, 128, 128, 0.336);
+    margin-top: 20px;
+
+}
+
+.details ol {
+    display: flex;
+    padding: 10px;
+}
+
+.details--btn {
+    margin-top: 30px;
+    font-size: 13px;
+    color: gray
+}
+
+.--dealer {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 420px) {
+    .bi--direction {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .finder {
+        width: 100%;
+        padding: 9px;
+    }
+
+    .results--container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .--dealer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .list--type img {
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 820px) {
+    .bi--direction {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .finder {
+        width: 100%;
+        padding: 9px;
+    }
+}
